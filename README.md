@@ -55,7 +55,7 @@ Flight Management System 4.0 is a console-based Java application simulating a co
 
 Here is a screenshot of the confirmation email received after booking:
 
-![Confirmation Email](images/Screenshot%202025-05-25%20135011.png)
+![Confirmation Email](images/Screenshot 2025-05-26 223728.png)
 
 ✅ Booking ID, Flight ID  
 🛫 Flight details (e.g., FL102 (IND–DEL, 6:00PM))  
