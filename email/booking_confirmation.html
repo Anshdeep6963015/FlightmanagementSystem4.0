@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYMAFIA - Flight Confirmation</title>
+    <style>
+        /* Import a suitable font for the gangster vibe */
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        body {
+            font-family: 'Oswald', Impact, 'Arial Black', sans-serif;
+            background: #1a1a1a; /* Matte Black for main background */
+            padding: 30px;
+            margin: 0;
+            color: #eeeeee; /* Primary text color */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #121212; /* Slightly lighter Matte Black for container background */
+            border-radius: 15px;
+            box-shadow: none; /* No box-shadow */
+            padding: 30px 40px;
+            border: 1px solid #A67C00; /* Darker Bronzish Gold for border */
+        }
+
+        h2 {
+            color: #A67C00; /* Darker Bronzish Gold for heading */
+            font-weight: 900;
+            font-size: 36px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            text-shadow: none; /* No text-shadow */
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 25px;
+            text-align: center;
+            letter-spacing: 1.5px;
+            color: #eeeeee; /* Primary text color */
+        }
+
+        strong {
+            color: #A67C00; /* Darker Bronzish Gold for strong text */
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+            color: #eeeeee; /* Primary text color */
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 15px 0;
+            /* Darker Bronzish Gold border and opacity */
+            border-bottom: 1px solid rgba(166, 124, 0, 0.55);
+            padding-bottom: 10px;
+        }
+
+        .qr-code-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .qr-code {
+            width: 170px;
+            height: 170px;
+            border-radius: 15px;
+            box-shadow: none; /* No box-shadow */
+        }
+
+        .instruction {
+            font-size: 16px;
+            color: #999999; /* Secondary text color */
+            margin-top: 35px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .airline-name {
+            font-weight: 900;
+            font-size: 22px;
+            color: #A67C00; /* Darker Bronzish Gold for airline name */
+            text-align: center;
+            margin-top: 50px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: none; /* No text-shadow */
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #333333; /* Horizontal rule color */
+            margin-top: 40px;
+        }
+
+        .copyright {
+            font-size: 12px;
+            color: #555555; /* Copyright text color */
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>SKYMAFIA FLIGHT CONFIRMATION</h2>
+
+        <p>
+            <strong style="font-size: 20px;">Hey Boss,</strong> <br> Your booking is locked in. Details below — keep it tight.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Booking ID:</strong> {{bookingId}}
+            </li>
+            <li>
+                <strong>Flight ID:</strong> {{flightId}}
+            </li>
+            <li>
+                <strong>Seat Class:</strong> {{seatClass}}
+            </li>
+            <li>
+                <strong>Food Option:</strong> {{foodOption}}
+            </li>
+        </ul>
+
+        <p class="instruction">
+            Flash this QR code at the gate. No slips, no mistakes — smooth ride guaranteed.
+        </p>
+
+        <div class="qr-code-container">
+            <img src="cid:qrCodeImage" alt="QR Code"
+                 class="qr-code" />
+        </div>
+
+        <p class="instruction">
+            Questions? Hit up our support crew anytime. We're watching your back.
+        </p>
+
+        <p class="airline-name">
+            SKYMAFIA AIRLINES
+        </p>
+
+        <hr>
+
+        <p class="copyright">
+            © 2025 SkyMafia Airlines. Respect the code.
+        </p>
+    </div>
+</body>
+</html>
