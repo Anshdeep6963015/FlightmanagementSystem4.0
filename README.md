@@ -1,12 +1,13 @@
-# ✈️ Flight Management System 3.0 – Java Console Application  
+# ✈️ Flight Management System 4.0 – Java Console Application  
 _By Anshdeep_
 
 ---
 
 ## 📖 Overview  
-Flight Management System 3.0 is a console-based Java application simulating a complete airline ticketing and booking platform. This version brings significant upgrades over 2.0 with enhanced features like:
+Flight Management System 4.0 is a console-based Java application simulating a complete airline ticketing and booking platform. This version brings significant upgrades over 3.0, including:
 
 - 🔐 Role-based access (Admin, Agent, Passenger)  
+- 📊 **New: Admin Analytics Dashboard**  
 - 📩 HTML-based email booking confirmations  
 - 📷 QR code ticket generation  
 - 🍱 Food preference selection  
@@ -17,9 +18,9 @@ Flight Management System 3.0 is a console-based Java application simulating a co
 
 ---
 
-## 🛠️ Features (Version 3.0)
+## 🛠️ Features (Version 4.0)
 
-### ✅ Implemented in 3.0  
+### ✅ Implemented in 4.0  
 - 🎫 Booking and Cancellation System  
 - 🔐 Role-Based Access: Admin, Agent, Passenger  
 - 🛫 Flight Info: Flight ID, Route, Date, Time  
@@ -31,18 +32,20 @@ Flight Management System 3.0 is a console-based Java application simulating a co
 - 📁 File-based Input/Output and Logs  
 - 📦 CSV Export of Bookings  
 - 📑 Clean and modular Java structure  
+- 📊 **Admin Analytics Dashboard** – View total bookings, food stats, class usage
 
-### 🧭 Planned Enhancements
+---
+
+## 🧭 Planned Enhancements
 
 | Step | Feature            | Status   | Description                         |
-|-------|--------------------|----------|-----------------------------------|
-| 1️⃣    | Admin Analytics    | Pending  | View total revenue, passenger stats|
-| 2️⃣    | GUI Interface      | Planned  | Dialog/JavaFX-based UI             |
-| 3️⃣    | Password Hashing   | Pending  | Secure login with SHA-256          |
-| 4️⃣    | OTP Login          | Pending  | Secure one-time password login     |
-| 5️⃣    | Booking History    | Pending  | Per-user booking log               |
-| 6️⃣    | Flight Filters     | Pending  | Search by route/date/seat class    |
-| 7️⃣    | Web/Mobile Version | Planned  | Spring Boot backend + React frontend |
+|------|--------------------|----------|-------------------------------------|
+| 1️⃣  | Password Hashing   | Pending  | Secure login with SHA-256           |
+| 2️⃣  | OTP Login          | Pending  | Secure one-time password login      |
+| 3️⃣  | Booking History    | Pending  | Per-user booking log                |
+| 4️⃣  | Flight Filters     | Pending  | Search by route/date/seat class     |
+| 5️⃣  | GUI Interface      | Planned  | Dialog/JavaFX-based UI              |
+| 6️⃣  | Web/Mobile Version | Planned  | Spring Boot backend + React frontend|
 
 ---
 
@@ -54,8 +57,6 @@ Here is a screenshot of the confirmation email received after booking:
 
 ![Confirmation Email](images/Screenshot%202025-05-25%20135011.png)
 
-
-
 ✅ Booking ID, Flight ID  
 🛫 Flight details (e.g., FL102 (IND–DEL, 6:00PM))  
 💺 Seat class & 🍱 food option  
@@ -65,11 +66,12 @@ Here is a screenshot of the confirmation email received after booking:
 
 ## 🛠 How It Works  
 - 📥 Takes user input via Java Scanner  
-- 📤 Outputs confirmation and status in output.txt  
-- 📦 Saves data in structured files (booking_log.txt, bookings.csv)  
+- 📤 Outputs confirmation and status in `output.txt`  
+- 📦 Saves data in structured files (`booking_log.txt`, `bookings.csv`)  
 - 📨 Sends confirmation email with ticket details (HTML format)  
 - 📷 Generates QR code for each booking using ZXing  
 - 💳 Simulates payment without real transactions  
+- 📊 Shows total bookings, food preferences, seat usage by class  
 
 ---
 
@@ -83,8 +85,7 @@ Here is a screenshot of the confirmation email received after booking:
 ---
 
 ## 📁 Project Structure
-
-FlightManagementSystem3.0/
+FlightManagementSystem4.0/
 ├── Booking.class
 ├── bookings.csv
 ├── booking_log.txt
@@ -124,17 +125,11 @@ FlightManagementSystem3.0/
 ├── SearchUtil.java
 └── users.txt
 
-
-
-
-
-
-
-
-## About the Developer
+## 👨‍💻 About the Developer
 
 **Anshdeep** — CSE Student at Chitkara University
 
 📧 Personal Email: [anshdeeep24072004@gmail.com](mailto:anshdeeep24072004@gmail.com)  
 🎓 University Email: [anshdeep1779.be23@chitkara.edu.in](mailto:anshdeep1779.be23@chitkara.edu.in)
 
+---
