@@ -4,7 +4,7 @@ import java.util.Properties;
 
 public class EmailConfig {
     public static final String SENDER_EMAIL = "anshdeep24072004@gmail.com"; // Make sure this is correct
-    public static final String SENDER_PASSWORD = "ekiwuccqbjvlxipm"; // Your NEW App Password
+    public static final String SENDER_PASSWORD = "fvpmaumpayzmmcnk"; // Your NEW App Password
 
     public static Properties getEmailProperties() {
         Properties props = new Properties();
